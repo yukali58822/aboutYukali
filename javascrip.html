@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pei-Chen的簡介</title>
+    <style type="=text/css">
+        *{font-family: "標楷體";margin-left: auto;margin-right: auto;}
+        h1{color:blue;font-size: 60px;}
+        h2{color:#33ff33; font-size:40px;}
+    </style>
+    <script>
+		function change1() {
+  			document.getElementById("pic").src = "mountain.jpg";
+  			document.getElementById("h2text").innerText = "靜宜資管";
+		}
+
+		function change2() {
+  			document.getElementById("pic").src = "cliff.jpg";
+  			document.getElementById("h2text").innerText = "Pei-Chen Xie";
+		}
+	</script>
+
+</head>
+<body>
+    <tr>
+        <td>
+            <img src="cliff.jpg" width="110%" id="pic" onmouseover="change1()" onmouseout="change2()"</img>
+        </td>
+        <td>
+            <h1>謝</h1>
+            <h2 id="h2text">Pei_Chen Xie</h2>
+        </td>
+
+    </tr>
+</body>
+</html>
